@@ -1,0 +1,177 @@
+/* Estilos Gerais e Mobile First (Telas Pequenas) */
+:root {
+    --cor-principal: #007BFF;
+    --cor-fundo: #f4f4f4;
+    --cor-texto: #333;
+    --cor-branco: #fff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+}
+
+.container {
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header {
+    background: var(--cor-principal);
+    color: var(--cor-branco);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav a {
+    color: var(--cor-branco);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.secao {
+    padding: 40px 0;
+    text-align: center;
+}
+
+#inicio {
+    background: #333;
+    color: var(--cor-branco);
+}
+
+.cta-button {
+    display: inline-block;
+    background: var(--cor-principal);
+    color: var(--cor-branco);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+#contato ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer {
+    background: #333;
+    color: var(--cor-branco);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Estilos para a galeria de projetos */
+.projetos-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.projeto-card {
+    background: var(--cor-branco);
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.projeto-card h3 {
+    margin-top: 0;
+}
+
+.projeto-card a {
+    color: var(--cor-principal);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* --- Media Queries para Responsividade --- */
+
+/* Tablet (telas a partir de 768px) */
+@media (min-width: 768px) {
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .projetos-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    }
+}
+
+/* Desktop (telas a partir de 1024px) */
+@media (min-width: 1024px) {
+    .projetos-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    }
+
+    #sobre .container {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        gap: 40px;
+    }
+
+    .profile-pic {
+        margin: 0;
+    }
+}
+/* ===================================== */
+/* Estilos para os links/botões do projeto (CORRIGIDO) */
+/* ===================================== */
+.projeto-links {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px; 
+}
+
+.projeto-botao {
+    padding: 8px 15px;
+    color: #fff !important; /* IMPORTANTE: Garante que o texto seja branco */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.projeto-botao:hover {
+    transform: scale(1.05); 
+}
+
+/* Cor para o botão do site */
+.projeto-botao.site {
+    background-color: var(--cor-principal); /* Azul */
+}
+
+/* Cor para o botão do GitHub */
+.projeto-botao.github {
+    background-color: #333; /* Cinza escuro */
+}
