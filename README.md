@@ -34,15 +34,4 @@ O site apresenta seções como "Sobre Mim", uma galeria de "Projetos" que é pre
 
 Desenvolvido por **João Victor Custodio**.
 
-- LinkedIn: [`https://linkedin.com/in/seu-usuario`](https://linkedin.com/in/seu-usuario) - Email: `seu-email@exemplo.com` ```
-
-**3. Envie o Novo Arquivo para o GitHub:**
-* Salve o arquivo `README.md`.
-* Volte para o terminal do VS Code e execute estes três comandos:
-
-```bash
-git add README.md
-
-git commit -m "Adiciona README.md ao projeto"
-
-git push origin main
+- LinkedIn: [`https://linkedin.com/in/seu-usuario`](https://www.linkedin.com/in/joão-custódio-b69731201) - Email: `joaovcustodio@outlook.com` ```
