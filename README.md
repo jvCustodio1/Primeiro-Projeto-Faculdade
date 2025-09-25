@@ -34,4 +34,4 @@ O site apresenta seções como "Sobre Mim", uma galeria de "Projetos" que é pre
 
 Desenvolvido por **João Victor Custodio**.
 
-- LinkedIn: [`https://linkedin.com/in/seu-usuario`](https://www.linkedin.com/in/joão-custódio-b69731201) - Email: `joaovcustodio@outlook.com` ```
+- LinkedIn: [`Joao Victor Custodio`](https://www.linkedin.com/in/joão-custódio-b69731201) - Email: `joaovcustodio@outlook.com` ```
